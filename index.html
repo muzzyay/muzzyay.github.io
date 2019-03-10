@@ -196,26 +196,21 @@
         <form action="https://formspree.io/may@mustafaay.tech" method="POST">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="firstname"> First Name</label>
-              <input type="text" class="form-control" id="firstname" placeholder="John" />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="lastname">Last Name</label>
-              <input type="text" class="form-control" id="lastname" placeholder="Smith" />
+              <label for="firstname">Name</label>
+              <input type="text" class="form-control" id="firstname" name="name" placeholder="John Smith" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="example@placeholder.com" />
+              <input type="email" class="form-control" id="email" name="_replyto" placeholder="example@placeholder.com" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
+                <input type="hidden" name="_subject" value="New submission!" />
               <label for="message">Message</label>
-              <textarea class="form-control" id="message" placeholder="Please type your message here." rows="5"></textarea>
+              <textarea class="form-control" id="message" name="message" placeholder="Please type your message here." rows="5"></textarea>
             </div>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
